@@ -21,6 +21,9 @@ button {
     color: white;    
     font-size: 16pt; 
     font-weight: lighter;
+    width: 250px;
+    height: 50px;
+    background: #435869;                                      
 }
 img, .logo {
     cursor: pointer;
@@ -57,15 +60,11 @@ hr {
             align-items: center;     
             width: 350px;
             margin-right: 20px;              
-            #btn1 {                                              
-                background: #435869;                
-                height: 50px; 
-                width: 250px;              
+            #btn1 {                                                           
                 margin-right: 12.5px;                
             }       
             #btn2 {                                              
-                background: #00B588; 
-                height: 50px;                                             
+                background: #00B588;                                                            
                 margin-left: 12.5px;
                 width: 120px;                                  
             }
@@ -79,7 +78,7 @@ hr {
 .cuerpo {
     display: flex;
     justify-content: space-around;            
-    flex-grow: 2;    
+    flex-grow: 1;    
     #part1 {
         display: flex;                        
         flex-direction: column;                     
@@ -100,11 +99,6 @@ hr {
             opacity: 0.5;
             flex-grow: 2;
             width: auto;
-        }
-        #btn3 {
-            background: #435869;                              
-            height: 50px;
-            width: 250px;            
         }
         #btn3:hover {
             color: white;
@@ -219,7 +213,7 @@ hr {
             flex-grow: 2;           
             height: auto;
             width: auto;                               
-            .cantidad {                
+            .cantidad {
                 display: flex;
                 flex-direction: column;                    
                 width: auto;
@@ -350,10 +344,7 @@ hr {
                     text-align: center;
                 }
                 #btn5 {
-                    background: #435869;
-                    height: 50px;
-                    margin-top: 50px;
-                    width: 250px;                            
+                    margin-top: 50px;                                              
                 }
                 #btn5:hover {
                     background: gray;
@@ -369,6 +360,7 @@ hr {
         width: auto;
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
         justify-content: center;      
         text-align: center;
                 #parrafo3 {
@@ -392,22 +384,53 @@ hr {
                     margin-top: 50px;
                 }
 } 
-        
-/*
 .cuerpo3 {
-    background-color: blue;
-    padding: 25px 0px 25px 0px;
-}
+    display: flex; 
+    background-color: rgb(248, 248, 248);
+    flex-grow: 1;
+    #part3 {
+        display: flex;
+        margin: 0px 0px 0px 0px; //arriba derecha abajo izquierda
+        padding: 130px 30px 100px 0px; //arriba derecha abajo izquierda
 
-.footer {
+
+
+
+
+
+
+        
+        width: auto;
+        height: auto;                             
+            #parrafoBajo {                
+                font-weight: bold;
+                font-size: 36pt;
+                color: #00B588;
+                margin: -12px 7%;
+            }
+            #parrafoBajo2 {                
+                font-weight: lighter;
+                font-size: 16.3pt;
+                color: gray;
+                padding-top: 5px;
+                padding-right: 70px;
+                padding-bottom: 10px;
+                padding-left: 60px;
+                opacity: 0.7;
+            }              
+            #btn4 {                                    
+                margin: 20px 0px 0px 60px;                 
+            }
+    }   
+}        
+  
+/*.footer {
     background-color: green;
     padding: 25px 0px 25px 0px;
 }*/
 /*-------------------------------Adaptable------------------------------*/
 @media all and (max-width: 1085px) {
-    .cuerpo {
-        display: flex;
-        justify-content: space-around;            
+    .cuerpo {        
         flex-wrap: wrap;
         #part1 {
             margin: 90px 0px 0px 0px;    
@@ -422,9 +445,7 @@ hr {
     }
 }
 @media all and (max-width: 950px) {
-    .cuerpo {
-        display: flex;
-        justify-content: space-around;                    
+    .cuerpo {           
         #part1 {
             margin: 110px 0px 0px 0px;
             height: 270px; 
@@ -535,36 +556,17 @@ hr {
         } 
     }
     .cuerpo2 {
-        background-color: white;
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;      
-        text-align: center;
-                #parrafo3 {
-                    color:#00B588;                    
-                    font-weight: bold;
-                    font-size: 30pt;
-                    margin-top: 50px;                    
-                }
-                #parrafo4 {
-                    color: gray;                    
-                    font-weight: lighter;
-                    font-size: 17.5pt;
-                    opacity: 0.5;                    
-                }
-                #tablePrestamos {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    flex-grow: 1;
-                    margin-top: 50px;
-                    height: 200px;
-                    width: 300px;
-                }
-} 
+        #parrafo3 {
+            font-size: 30pt;                            
+        }
+        #parrafo4 {
+            font-size: 17.5pt;                               
+        }
+        img {                               
+            height: auto;
+            width: 500px;
+        }                
+    } 
 }
 @media all and (max-width: 650px) {
     .header {
@@ -606,4 +608,30 @@ hr {
             }                                                   
         } 
     }
+    .cuerpo2 {
+        #parrafo3 {
+            font-size: 28pt;                            
+        }
+        #parrafo4 {
+            font-size: 15.5pt;                               
+        }
+        img {                               
+            height: auto;
+            width: 450px;
+        }                
+    } 
+}
+@media all and (max-width: 535px) {
+    .cuerpo2 {
+        #parrafo3 {
+            font-size: 16pt;                            
+        }
+        #parrafo4 {
+            font-size: 10.5pt;                               
+        }
+        img {                               
+            height: auto;
+            width: 300px;
+        }                
+    } 
 }
