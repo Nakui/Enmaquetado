@@ -40,17 +40,6 @@
   </div>
 
 
-<div id="fondo2">
-	<label id="parrafo3">Save your Loans, get insights</label>
-	<br>
-	<label id="parrafo4">Register, record and track all your loans</label>
-</div>
-
-	<div id="tablePrestamos">				
-		<img src="../assets/prestamos.jpg"/>
-	</div>
-
-
 <div id="fondo3">
 	
 	<div id="part3">
