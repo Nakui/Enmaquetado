@@ -1,41 +1,49 @@
-body {    
+body {
     padding: 0;
     box-sizing: border-box;
     background-color: #00B588;
     font-family: 'Open Sans', sans-serif;
-} 
+}
+
 /* Scroll Personalizado */
 body::-webkit-scrollbar {
-	width: 10px;
-	background: rgb(4, 88, 67);
+    width: 10px;
+    background: rgb(4, 88, 67);
 }
+
 body::-webkit-scrollbar-thumb {
-	background: rgba(255,255,255, .2);
+    background: rgba(255, 255, 255, .2);
     border-radius: 10px;
-	border-right: 1px solid rgb(4, 88, 67);
+    border-right: 1px solid rgb(4, 88, 67);
 }
+
 button {
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
-    border:0;
-    color: white;    
-    font-size: 16pt; 
+    border: 0;
+    color: white;
+    font-size: 16pt;
     font-weight: lighter;
     width: 250px;
     height: 50px;
-    background: #435869;                                      
+    background: #435869;
 }
-img, .logo {
+
+img,
+.logo {
     cursor: pointer;
 }
+
 input {
     border: 1px solid #777777;
     border-radius: 4px 4px 4px 4px;
 }
+
 hr {
-    color: #777777;    
+    color: #777777;
     width: 370px;
 }
+
 .header {
     background-color: white;
     padding: 25px 0px 25px 0px;
@@ -45,96 +53,113 @@ hr {
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+
     .logo {
-        font-family:'Montserrat';
+        font-family: 'Montserrat';
         font-weight: bold;
         font-size: 27.06pt;
-        color: 	#00B588;
+        color: #00B588;
         text-align: left;
         margin-left: 20px;
     }
-    .botones {
-            display: flex;
-            flex-direction: row;            
-            justify-content: space-between;
-            align-items: center;     
-            width: 350px;
-            margin-right: 20px;              
-            #btn1 {                                                           
-                margin-right: 12.5px;                
-            }       
-            #btn2 {                                              
-                background: #00B588;                                                            
-                margin-left: 12.5px;
-                width: 120px;                                  
-            }
-            #btn1:hover, #btn2:hover {
-                background: gray;
-                color: white;                
-            }
 
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        margin-right: 20px;
+
+        #btn1 {
+            margin-right: 12.5px;
         }
+
+        #btn2 {
+            background: #00B588;
+            margin-left: 12.5px;
+            width: 120px;
+        }
+
+        #btn1:hover,
+        #btn2:hover {
+            background: gray;
+            color: white;
+        }
+
+    }
 }
+
 .cuerpo {
     display: flex;
-    justify-content: space-around;            
-    flex-grow: 1;    
+    justify-content: space-around;
+    flex-grow: 1;
+
     #part1 {
-        display: flex;                        
-        flex-direction: column;                     
+        display: flex;
+        flex-direction: column;
         margin: 110px 0px 70px 0px;
         width: auto;
-        height: 370px;  
-        color: white;      
+        height: 370px;
+        color: white;
+
         #parrafo1 {
-            font-size:44pt;   
-            font-weight: bold;                                          
+            font-size: 44pt;
+            font-weight: bold;
             flex-grow: 1;
             margin: 0px 0px 0px 0px;
             width: auto;
         }
+
         #parrafo2 {
             font-weight: lighter;
-            font-size: 28.5pt;                              
+            font-size: 28.5pt;
             opacity: 0.5;
             flex-grow: 2;
             width: auto;
         }
+
         #btn3:hover {
             color: white;
             background: gray
-        }                                                    
-    }                                
+        }
+    }
+
     #part2 {
         display: flex;
-        flex-direction: column;           
+        flex-direction: column;
         width: 440px;
         height: 600px;
         background: #F5F5F5;
         margin: 70px 0px 0px 0px;
+
         .iconos {
-            display: flex;                                
-            flex-direction: row;                
+            display: flex;
+            flex-direction: row;
             width: auto;
-            height: auto;            
+            height: auto;
             margin: 0;
-            padding: 0;        
+            padding: 0;
+
             div {
                 height: 115px;
-                width: auto;                    
+                width: auto;
+
                 &#caja1 {
                     display: flex;
                     justify-content: center;
-                    align-items: center;    
+                    align-items: center;
                     flex-direction: column;
                     flex: 1;
+
                     #ima4 {
                         height: 20px;
-                        width: auto;                        
+                        width: auto;
                         flex-grow: 0 1;
                     }
-                    #CARRO {                            
-                        position: relative;                            
+
+                    #CARRO {
+                        position: relative;
                         font-weight: bold;
                         font-size: 10pt;
                         color: #455C6A;
@@ -142,6 +167,7 @@ hr {
                         flex-grow: 0 1;
                     }
                 }
+
                 &#caja2 {
                     background: #435869;
                     display: flex;
@@ -149,13 +175,15 @@ hr {
                     align-items: center;
                     flex-direction: column;
                     flex: 1;
+
                     #ima5 {
                         height: 20px;
-                        width: auto;                        
+                        width: auto;
                         flex-grow: 0 1;
                     }
-                    #CASA {                            
-                        position: relative;                            
+
+                    #CASA {
+                        position: relative;
                         font-weight: bold;
                         font-size: 10pt;
                         color: #F5F5F5;
@@ -163,475 +191,879 @@ hr {
                         flex-grow: 0 1;
                     }
                 }
+
                 &#caja3 {
                     background: #435869;
                     display: flex;
                     justify-content: center;
-                    align-items: center;     
-                    flex-direction: column;   
+                    align-items: center;
+                    flex-direction: column;
                     flex: 1;
-                        #ima6 {
-                            height: 20px;
-                            width: auto;                            
-                            flex-grow: 0 1;
-                        }
-                        #UNIVERSIDAD {                            
-                            position: relative;                            
-                            font-weight: bold;
-                            font-size: 10pt;
-                            color: #F5F5F5;
-                            top: 8px;
-                            flex-grow: 0 1;
-                        }                            
+
+                    #ima6 {
+                        height: 20px;
+                        width: auto;
+                        flex-grow: 0 1;
+                    }
+
+                    #UNIVERSIDAD {
+                        position: relative;
+                        font-weight: bold;
+                        font-size: 10pt;
+                        color: #F5F5F5;
+                        top: 8px;
+                        flex-grow: 0 1;
+                    }
                 }
+
                 &#caja4 {
                     background: #435869;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    flex-direction: column;    
-                    flex: 1;         
-                        #ima7 {
-                            height: 20px;
-                            width: auto;                            
-                            flex-grow: 0 1;
-                        }
-                        #OTRO {                            
-                            position: relative;                                
-                            font-weight: bold;
-                            font-size: 10pt;
-                            color: #F5F5F5;
-                            top: 8px;
-                            flex-grow: 0 1;
-                        }
+                    flex-direction: column;
+                    flex: 1;
+
+                    #ima7 {
+                        height: 20px;
+                        width: auto;
+                        flex-grow: 0 1;
+                    }
+
+                    #OTRO {
+                        position: relative;
+                        font-weight: bold;
+                        font-size: 10pt;
+                        color: #F5F5F5;
+                        top: 8px;
+                        flex-grow: 0 1;
+                    }
                 }
-            }                
-        }                                            
+            }
+        }
+
         .datos {
             display: flex;
             flex-direction: column;
-            flex-grow: 2;           
+            flex-grow: 2;
             height: auto;
-            width: auto;                               
+            width: auto;
+
             .cantidad {
                 display: flex;
-                flex-direction: column;                    
+                flex-direction: column;
                 width: auto;
-                height: 85px;                 
-                    #cantidad {
+                height: 85px;
+
+                #cantidad {
+                    font-weight: lighter;
+                    font-size: 12pt;
+                    color: #777777;
+                    position: relative;
+                    top: 20px;
+                    left: 25px;
+                    width: 100px;
+                }
+
+                #text1 {
+                    height: 35px;
+                    width: auto;
+                    font-weight: lighter;
+                    font-size: 12pt;
+                    color: #777777;
+                    position: relative;
+                    top: 25px;
+                    margin-left: 25px;
+                    margin-right: 25px;
+
+                }
+            }
+
+            .mesess {
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                height: 85px;
+
+                .meses {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    width: auto;
+                    height: auto;
+
+                    #meses {
                         font-weight: lighter;
                         font-size: 12pt;
                         color: #777777;
                         position: relative;
                         top: 20px;
                         left: 25px;
-                        width: 100px;
-                    }                                      
-                    #text1 {
+                    }
+
+                    #text2 {
                         height: 35px;
-                        width: auto;                                                
+                        width: 70px;
                         font-weight: lighter;
                         font-size: 12pt;
                         color: #777777;
                         position: relative;
                         top: 25px;
-                        margin-left: 25px;
-                        margin-right: 25px;
-                        
-                    }                                            
-            } 
-            .mesess {
-                display: flex;
-                flex-direction: row;                     
-                width: auto;
-                height: 85px;
-                .meses {                               
-                    display: flex;
-                    flex-direction: column;
-                    flex: 1;
-                    width: auto;
-                    height: auto;                    
-                        #meses {
-                            font-weight: lighter;
-                            font-size: 12pt;
-                            color: #777777;
-                            position: relative;
-                            top: 20px;
-                            left: 25px;
-                        }                                      
-                        #text2 {
-                            height: 35px;
-                            width: 70px;                                                
-                            font-weight: lighter;
-                            font-size: 12pt;
-                            color: #777777;
-                            position: relative;
-                            top: 25px;
-                            left: 25px;
-                        }                                            
+                        left: 25px;
+                    }
                 }
-                .interes_Mensual {                         
+
+                .interes-mensual {
                     display: flex;
                     flex: 2.8;
-                    flex-direction: column;                        
+                    flex-direction: column;
                     width: auto;
-                    height: auto;                                          
-                        #interes_Mensual {
-                            font-weight: lighter;
-                            font-size: 12pt;
-                            color: #777777;
-                            position: relative;
-                            top: 20px;
-                            left: 0px;
-                            width: 169px;
-                        }                                      
-                        #text3 {
-                            height: 35px;
-                            width: 90px;                                                
-                            font-weight: lighter;
-                            font-size: 12pt;
-                            color: #777777;
-                            position: relative;
-                            top: 25px;
-                            right: 0px;
-                        }                                            
+                    height: auto;
+
+                    #interes_Mensual {
+                        font-weight: lighter;
+                        font-size: 12pt;
+                        color: #777777;
+                        position: relative;
+                        top: 20px;
+                        left: 0px;
+                        width: 169px;
+                    }
+
+                    #text3 {
+                        height: 35px;
+                        width: 90px;
+                        font-weight: lighter;
+                        font-size: 12pt;
+                        color: #777777;
+                        position: relative;
+                        top: 25px;
+                        right: 0px;
+                    }
                 }
             }
+
             .pagos {
                 display: flex;
-                flex-direction: row;                     
+                flex-direction: row;
                 width: auto;
                 height: 65px;
                 margin: 0px 27px;
-                .cuota, .interes_A_Pagar, .total_A_Pagar {
+
+                .cuota,
+                .interes-a-pagar,
+                .total-a-pagar {
                     display: flex;
                     flex-direction: column;
                     width: auto;
-                    height: auto; 
+                    height: auto;
                     justify-content: center;
                     align-items: center;
+
                     #p1 {
-                        color: 	#C8C8C8;
+                        color: #C8C8C8;
                         font-size: 11pt;
-                        font-weight: bolder;                            
+                        font-weight: bolder;
                     }
+
                     #p2 {
-                        color: 	#119E76;  
-                        font-size: 18pt;                       
-                        font-weight: bold;                        
+                        color: #119E76;
+                        font-size: 18pt;
+                        font-weight: bold;
                     }
                 }
-                .cuota {                            
-                        flex: 1;                        
+
+                .cuota {
+                    flex: 1;
                 }
-                .interes_A_Pagar {
-                        flex: 2;
+
+                .interes-a-pagar {
+                    flex: 2;
                 }
-                .total_A_Pagar {
-                        flex: 1.5;
-                }                                                                
-            } 
+
+                .total-a-pagar {
+                    flex: 1.5;
+                }
+            }
+
             .p3 {
                 align-items: center;
-                display: flex;                                
+                display: flex;
                 flex-direction: column;
                 flex-grow: 3;
-                #parrafo8 {                                        
-                    color: 	#8D8D8D;                       
+
+                #parrafo8 {
+                    color: #8D8D8D;
                     font-size: 13pt;
                     font-weight: lighter;
                     margin-top: 10px;
                     text-align: center;
                 }
+
                 #btn5 {
-                    margin-top: 50px;                                              
-                }
-                #btn5:hover {
-                    background: gray;
-                    color: white;                                           
-                }
-            }
-        }                    
-    }            
-}                  
-.cuerpo2 {
-        background-color: white;
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: center;      
-        text-align: center;
-                #parrafo3 {
-                    color:#00B588;                    
-                    font-weight: bold;
-                    font-size: 36pt;
-                    margin-top: 50px;                    
-                }
-                #parrafo4 {
-                    color: gray;                    
-                    font-weight: lighter;
-                    font-size: 23.5pt;
-                    opacity: 0.5;                    
-                }
-                div {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    flex-grow: 1;
                     margin-top: 50px;
                 }
-} 
-.cuerpo3 {
-    display: flex; 
-    background-color: rgb(248, 248, 248);
-    flex-grow: 1;
-    #part3 {
-        display: flex;
-        margin: 0px 0px 0px 0px; //arriba derecha abajo izquierda
-        padding: 130px 30px 100px 0px; //arriba derecha abajo izquierda
 
-
-
-
-
-
-
-        
-        width: auto;
-        height: auto;                             
-            #parrafoBajo {                
-                font-weight: bold;
-                font-size: 36pt;
-                color: #00B588;
-                margin: -12px 7%;
+                #btn5:hover {
+                    background: gray;
+                    color: white;
+                }
             }
-            #parrafoBajo2 {                
-                font-weight: lighter;
-                font-size: 16.3pt;
-                color: gray;
-                padding-top: 5px;
-                padding-right: 70px;
-                padding-bottom: 10px;
-                padding-left: 60px;
-                opacity: 0.7;
-            }              
-            #btn4 {                                    
-                margin: 20px 0px 0px 60px;                 
-            }
-    }   
-}        
-  
-/*.footer {
-    background-color: green;
-    padding: 25px 0px 25px 0px;
-}*/
-/*-------------------------------Adaptable------------------------------*/
-@media all and (max-width: 1085px) {
-    .cuerpo {        
-        flex-wrap: wrap;
-        #part1 {
-            margin: 90px 0px 0px 0px;    
-        }                      
-        #part2 {
-            margin: 50px 0px 0px 0px;  
-            display: flex;
-            flex-direction: column;           
-            width: 400px;
-            height: 560px;      
         }
     }
 }
+
+.cuerpo2 {
+    background-color: white;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+
+    #parrafo3 {
+        color: #00B588;
+        font-weight: bold;
+        font-size: 36pt;
+        margin-top: 50px;
+    }
+
+    #parrafo4 {
+        color: gray;
+        font-weight: lighter;
+        font-size: 23.5pt;
+        opacity: 0.5;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        margin-top: 50px;
+    }
+}
+
+.cuerpo3 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(248, 248, 248);
+    flex-grow: 1;
+
+    #part3 {
+        display: flex;
+        flex-direction: column;
+        margin: 90px 0px 0px 0px; //arriba derecha abajo izquierda        
+        width: auto;
+        height: 250px;
+
+        #parrafoBajo {
+            font-weight: bold;
+            font-size: 36pt;
+            color: #00B588;
+            margin: 0px 0px 0px 0px;
+        }
+
+        #parrafoBajo2 {
+            font-weight: lighter;
+            font-size: 16.3pt;
+            color: gray;
+            opacity: 0.7;
+        }
+
+        #btn4:hover {
+            color: white;
+            background: gray
+        }
+    }
+
+    #part4 {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 0px 0px 20px 0px; //arriba derecha abajo izquierda
+
+        #table2 {
+            text-align: left;
+            height: auto;
+            margin: 80px 0px 0px 72px; //arriba derecha abajo izquierda
+
+            tr {
+                width: auto;
+                height: 70px;
+
+                th {
+                    width: auto;
+                    height: 70px;
+
+                    &#parrafo5 {
+                        font-weight: 'lighter';
+                        font-size: 12pt;
+                        border: 2px solid rgb(233, 230, 230);
+                        background: white;
+                        opacity: 0.5;
+                    }
+
+                    &#parrafo6 {
+                        font-weight: 'lighter';
+                        font-size: 12pt;
+                        border: 2px solid rgb(233, 230, 230);
+                        background: white;
+                        opacity: 0.3;
+                    }
+
+                    &#parrafo7 {
+                        font-weight: 'lighter';
+                        font-size: 12pt;
+                        border: 2px solid rgb(233, 230, 230);
+                        background: white;
+                        opacity: 0.1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #445B69;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+
+    #pie-Label-one {
+        color: white;
+        font-weight: bold;
+        font-size: 36pt;
+    }
+
+    #pie-Label-two {
+        color: #5DBCD2;
+        font-size: 22pt;
+        font-weight: lighter;
+        padding-bottom: 50px;
+    }
+
+    #tabla {
+        display: flex;
+        justify-content: center;
+
+        table {
+            tr {
+                td {
+                    width: 110px;
+                }
+            }
+        }
+    }
+
+    #pie2 {
+        color: rgb(104, 132, 148);
+        display: flex;
+        justify-content: center;
+        background-color: #3C525F;
+        font-size: 14pt;
+        margin-top: 50px;
+        padding: 25px 0px 25px 0px;
+        flex-grow: 1;
+
+        .creditos:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+/*-------------------------------Adaptable------------------------------*/
+@media all and (max-width: 1085px) {
+    .cuerpo {
+        flex-wrap: wrap;
+
+        #part1 {
+            margin: 90px 0px 0px 0px;
+        }
+
+        #part2 {
+            margin: 50px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 560px;
+        }
+    }
+
+    .cuerpo3 {
+        #part3 {
+            height: 170px;
+
+            #parrafoBajo {
+                font-size: 30pt;
+            }
+
+            #parrafoBajo2 {
+                font-size: 13.3pt;
+            }
+
+            #btn4 {
+                font-size: 12pt;
+                height: 40px;
+                width: 160px;
+            }
+        }
+
+        #part4 {
+            #table2 {
+                tr {
+                    th {
+                        img {
+                            height: 70px;
+                            width: auto;
+                        }
+
+                        &#parrafo5 {
+                            font-size: 10pt;
+                        }
+
+                        &#parrafo6 {
+                            font-size: 10pt;
+                        }
+
+                        &#parrafo7 {
+                            font-size: 10pt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media all and (max-width: 950px) {
-    .cuerpo {           
+    .cuerpo {
         #part1 {
             margin: 110px 0px 0px 0px;
-            height: 270px; 
+            height: 270px;
+
             #parrafo1 {
                 flex-grow: 0;
-                font-size:34pt;   
+                font-size: 34pt;
             }
-            #parrafo2 {                
-                font-size: 18.5pt;                              
+
+            #parrafo2 {
+                font-size: 18.5pt;
                 flex-grow: 0;
             }
-            #btn3 {       
-                font-size: 14pt;                                   
+
+            #btn3 {
+                font-size: 14pt;
                 height: 40px;
-                width: 200px;                                                         
-            }    
-        }                      
+                width: 200px;
+            }
+        }
+
         #part2 {
             display: flex;
-            flex-direction: column;           
+            flex-direction: column;
             width: 300px;
-            height: 500px;                                                                               
+            height: 500px;
+
             .datos {
                 display: flex;
                 flex-direction: column;
-                flex-grow: 2;           
+                flex-grow: 2;
                 height: auto;
-                width: auto;                               
+                width: auto;
+
                 .cantidad {
-                    height: 70px;                 
-                        #cantidad {
-                            font-size: 10pt;
-                        }                                      
-                        #text1 {
-                            height: 25px;
-                            font-size: 10pt;                                                         
-                        }                                            
-                } 
+                    height: 70px;
+
+                    #cantidad {
+                        font-size: 10pt;
+                    }
+
+                    #text1 {
+                        height: 25px;
+                        font-size: 10pt;
+                    }
+                }
+
                 .mesess {
                     height: 70px;
+
                     .meses {
                         display: flex;
                         flex-direction: column;
                         flex: 1.3;
-                        
-                        height: auto;                    
-                            #meses {                                
-                                font-size: 10pt;
-                                top: 10px;
-                            }                                      
-                            #text2 {
-                                height: 25px;                            
-                                font-size: 10pt;
-                                top: 15px;
-                                width: 60px;
-                            }                                            
+                        height: auto;
+
+                        #meses {
+                            font-size: 10pt;
+                            top: 10px;
+                        }
+
+                        #text2 {
+                            height: 25px;
+                            font-size: 10pt;
+                            top: 15px;
+                            width: 60px;
+                        }
                     }
-                    .interes_Mensual {
-                            #interes_Mensual {                                
-                                font-size: 10pt;
-                                top: 10px;
-                                width: 149px;
-                            }                                      
-                            #text3 {
-                                height: 25px;
-                                width: 90px;                                                                                
-                                font-size: 10pt;
-                                top: 15px;
-                                left: 0px;
-                            }                                            
+
+                    .interes-mensual {
+                        #interes_Mensual {
+                            font-size: 10pt;
+                            top: 10px;
+                            width: 149px;
+                        }
+
+                        #text3 {
+                            height: 25px;
+                            width: 90px;
+                            font-size: 10pt;
+                            top: 15px;
+                            left: 0px;
+                        }
                     }
                 }
+
                 hr {
                     width: 240px;
                 }
+
                 .pagos {
-                    .cuota, .interes_A_Pagar, .total_A_Pagar {       
-                        #p1 {                            
-                            font-size: 7pt;                                                      
+
+                    .cuota,
+                    .interes-a-pagar,
+                    .total-a-pagar {
+                        #p1 {
+                            font-size: 7pt;
                         }
-                        #p2 {                            
-                            font-size: 14pt;                                                                          
+
+                        #p2 {
+                            font-size: 14pt;
                         }
                     }
-                    .cuota {                            
-                            flex: 1;                        
+
+                    .cuota {
+                        flex: 1;
                     }
-                    .interes_A_Pagar {
-                            flex: 2;
+
+                    .interes-a-pagar {
+                        flex: 2;
                     }
-                    .total_A_Pagar {
-                            flex: 1.5;
-                    }                                                                
-                } 
-                .p3 {
-                    #parrafo8 {                                                                                    
-                        font-size: 10pt; 
-                        margin-top: 5px;            
-                    }
-                    #btn5 {                        
-                        height: 40px;
-                        font-size: 14pt;                        
-                        margin-top: 25px;
-                        width: 200px;                            
+
+                    .total-a-pagar {
+                        flex: 1.5;
                     }
                 }
-            }                    
-        } 
+
+                .p3 {
+                    #parrafo8 {
+                        font-size: 10pt;
+                        margin-top: 5px;
+                    }
+
+                    #btn5 {
+                        height: 40px;
+                        font-size: 14pt;
+                        margin-top: 25px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
     }
+
     .cuerpo2 {
         #parrafo3 {
-            font-size: 30pt;                            
+            font-size: 30pt;
         }
+
         #parrafo4 {
-            font-size: 17.5pt;                               
+            font-size: 17.5pt;
         }
-        img {                               
+
+        img {
             height: auto;
             width: 500px;
-        }                
-    } 
+        }
+    }
+
+    .cuerpo3 {
+        #part3 {
+            height: 255px;
+
+            #parrafoBajo {
+                font-size: 24pt;
+            }
+
+            #parrafoBajo2 {
+                font-size: 11pt;
+            }
+
+            #btn4 {
+                font-size: 6pt;
+                height: 30px;
+                width: 140px;
+            }
+        }
+
+        #part4 {
+            width: 303px;
+
+            #table2 {
+                tr {
+                    th {
+                        img {
+                            height: 50px;
+                            width: auto;
+                        }
+
+                        &#parrafo5 {
+                            font-size: 8pt;
+                        }
+
+                        &#parrafo6 {
+                            font-size: 8pt;
+                        }
+
+                        &#parrafo7 {
+                            font-size: 8pt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        #pie-Label-one {
+            font-size: 30pt;
+        }
+
+        #pie-Label-two {
+            font-size: 16pt;
+        }
+
+        #tabla {
+            table {
+                tr {
+                    td {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        #pie2 {
+            font-size: 12pt;
+        }
+    }
 }
+
 @media all and (max-width: 650px) {
     .header {
         display: flex;
         justify-content: center;
+
         .logo {
             display: flex;
             justify-content: center;
             flex-grow: 1;
             margin: 0px;
         }
+
         .botones {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             flex-grow: 1;
             margin-right: 0px;
-            #btn1, #btn2 {
+
+            #btn1,
+            #btn2 {
                 margin: 0px;
                 flex-grow: 1;
             }
         }
     }
+
     .cuerpo {
         #part1 {
             margin: 50px 0px 0px 5px;
             width: auto;
-            height: 180px;            
-            #parrafo1 {                                    
-                font-size:24pt;   
+            height: 180px;
+
+            #parrafo1 {
+                font-size: 24pt;
             }
-            #parrafo2 {                                    
-                font-size: 15pt;                                                                   
+
+            #parrafo2 {
+                font-size: 15pt;
             }
+
             #btn3 {
-                font-size: 10pt; 
-                height: auto;                    
+                font-size: 10pt;
+                height: 60px;
                 width: 140px;
-            }                                                   
-        } 
+            }
+        }
     }
+
     .cuerpo2 {
         #parrafo3 {
-            font-size: 28pt;                            
+            font-size: 28pt;
         }
+
         #parrafo4 {
-            font-size: 15.5pt;                               
+            font-size: 15.5pt;
         }
-        img {                               
+
+        img {
             height: auto;
             width: 450px;
-        }                
-    } 
+        }
+    }
+
+    .footer {
+        #pie-Label-one {
+            font-size: 24pt;
+        }
+
+        #pie-Label-two {
+            font-size: 14pt;
+        }
+
+        #tabla {
+            table {
+                tr {
+                    td {
+                        width: 80px;
+
+                        img {
+                            height: 50px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        #pie2 {
+            font-size: 10pt;
+        }
+    }
 }
+
 @media all and (max-width: 535px) {
     .cuerpo2 {
         #parrafo3 {
-            font-size: 16pt;                            
+            font-size: 16pt;
         }
+
         #parrafo4 {
-            font-size: 10.5pt;                               
+            font-size: 10.5pt;
         }
-        img {                               
+
+        img {
             height: auto;
             width: 300px;
-        }                
-    } 
+        }
+    }
+
+    .cuerpo3 {
+        flex-wrap: wrap;
+
+        #part3 {
+            margin: 45px 0px 0px 0px; //arriba derecha abajo izquierda 
+            height: 120px;
+
+            #parrafoBajo {
+                font-size: 18pt;
+            }
+
+            #parrafoBajo2 {
+                font-size: 10pt;
+            }
+
+            #btn4 {
+                font-size: 8pt;
+                height: 60px;
+                width: 110px;
+            }
+        }
+
+        #part4 {
+            #table2 {
+                margin: 25px 0px 0px 0px; //arriba derecha abajo izquierda
+
+                tr {
+                    width: auto;
+                    height: 10px;
+
+                    th {
+                        width: auto;
+                        height: 10px;
+
+                        img {
+                            height: 50px;
+                            width: auto;
+                        }
+
+                        &#parrafo5 {
+                            font-size: 10pt;
+                        }
+
+                        &#parrafo6 {
+                            font-size: 10pt;
+                        }
+
+                        &#parrafo7 {
+                            font-size: 10pt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 20px;
+
+        #pie-Label-one {
+            font-size: 15pt;
+        }
+
+        #pie-Label-two {
+            font-size: 8.7pt;
+            padding-bottom: 20px;
+        }
+
+        #tabla {
+            table {
+                tr {
+                    td {
+                        width: 50px;
+
+                        img {
+                            height: 30px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        #pie2 {
+            font-size: 5pt;
+            margin-top: 20px;
+        }
+    }
 }
