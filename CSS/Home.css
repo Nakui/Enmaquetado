@@ -25,7 +25,8 @@ button {
   height: 50px;
   background: #435869; }
 
-img, .logo {
+img,
+.logo {
   cursor: pointer; }
 
 input {
@@ -65,7 +66,8 @@ hr {
       background: #00B588;
       margin-left: 12.5px;
       width: 120px; }
-    .header .botones #btn1:hover, .header .botones #btn2:hover {
+    .header .botones #btn1:hover,
+    .header .botones #btn2:hover {
       background: gray;
       color: white; }
 
@@ -239,13 +241,13 @@ hr {
             position: relative;
             top: 25px;
             left: 25px; }
-        .cuerpo #part2 .datos .mesess .interes_Mensual {
+        .cuerpo #part2 .datos .mesess .interes-mensual {
           display: flex;
           flex: 2.8;
           flex-direction: column;
           width: auto;
           height: auto; }
-          .cuerpo #part2 .datos .mesess .interes_Mensual #interes_Mensual {
+          .cuerpo #part2 .datos .mesess .interes-mensual #interes_Mensual {
             font-weight: lighter;
             font-size: 12pt;
             color: #777777;
@@ -253,7 +255,7 @@ hr {
             top: 20px;
             left: 0px;
             width: 169px; }
-          .cuerpo #part2 .datos .mesess .interes_Mensual #text3 {
+          .cuerpo #part2 .datos .mesess .interes-mensual #text3 {
             height: 35px;
             width: 90px;
             font-weight: lighter;
@@ -268,26 +270,32 @@ hr {
         width: auto;
         height: 65px;
         margin: 0px 27px; }
-        .cuerpo #part2 .datos .pagos .cuota, .cuerpo #part2 .datos .pagos .interes_A_Pagar, .cuerpo #part2 .datos .pagos .total_A_Pagar {
+        .cuerpo #part2 .datos .pagos .cuota,
+        .cuerpo #part2 .datos .pagos .interes-a-pagar,
+        .cuerpo #part2 .datos .pagos .total-a-pagar {
           display: flex;
           flex-direction: column;
           width: auto;
           height: auto;
           justify-content: center;
           align-items: center; }
-          .cuerpo #part2 .datos .pagos .cuota #p1, .cuerpo #part2 .datos .pagos .interes_A_Pagar #p1, .cuerpo #part2 .datos .pagos .total_A_Pagar #p1 {
+          .cuerpo #part2 .datos .pagos .cuota #p1,
+          .cuerpo #part2 .datos .pagos .interes-a-pagar #p1,
+          .cuerpo #part2 .datos .pagos .total-a-pagar #p1 {
             color: #C8C8C8;
             font-size: 11pt;
             font-weight: bolder; }
-          .cuerpo #part2 .datos .pagos .cuota #p2, .cuerpo #part2 .datos .pagos .interes_A_Pagar #p2, .cuerpo #part2 .datos .pagos .total_A_Pagar #p2 {
+          .cuerpo #part2 .datos .pagos .cuota #p2,
+          .cuerpo #part2 .datos .pagos .interes-a-pagar #p2,
+          .cuerpo #part2 .datos .pagos .total-a-pagar #p2 {
             color: #119E76;
             font-size: 18pt;
             font-weight: bold; }
         .cuerpo #part2 .datos .pagos .cuota {
           flex: 1; }
-        .cuerpo #part2 .datos .pagos .interes_A_Pagar {
+        .cuerpo #part2 .datos .pagos .interes-a-pagar {
           flex: 2; }
-        .cuerpo #part2 .datos .pagos .total_A_Pagar {
+        .cuerpo #part2 .datos .pagos .total-a-pagar {
           flex: 1.5; }
       .cuerpo #part2 .datos .p3 {
         align-items: center;
@@ -335,35 +343,98 @@ hr {
 
 .cuerpo3 {
   display: flex;
+  justify-content: space-around;
   background-color: #f8f8f8;
   flex-grow: 1; }
   .cuerpo3 #part3 {
     display: flex;
-    margin: 0px 0px 0px 0px;
-    padding: 130px 30px 100px 0px;
+    flex-direction: column;
+    margin: 90px 0px 0px 0px;
     width: auto;
-    height: auto; }
+    height: 250px; }
     .cuerpo3 #part3 #parrafoBajo {
       font-weight: bold;
       font-size: 36pt;
       color: #00B588;
-      margin: -12px 7%; }
+      margin: 0px 0px 0px 0px; }
     .cuerpo3 #part3 #parrafoBajo2 {
       font-weight: lighter;
       font-size: 16.3pt;
       color: gray;
-      padding-top: 5px;
-      padding-right: 70px;
-      padding-bottom: 10px;
-      padding-left: 60px;
       opacity: 0.7; }
-    .cuerpo3 #part3 #btn4 {
-      margin: 20px 0px 0px 60px; }
+    .cuerpo3 #part3 #btn4:hover {
+      color: white;
+      background: gray; }
+  .cuerpo3 #part4 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 0px 0px 20px 0px; }
+    .cuerpo3 #part4 #table2 {
+      text-align: left;
+      height: auto;
+      margin: 80px 0px 0px 72px; }
+      .cuerpo3 #part4 #table2 tr {
+        width: auto;
+        height: 70px; }
+        .cuerpo3 #part4 #table2 tr th {
+          width: auto;
+          height: 70px; }
+          .cuerpo3 #part4 #table2 tr th#parrafo5 {
+            font-weight: 'lighter';
+            font-size: 12pt;
+            border: 2px solid #e9e6e6;
+            background: white;
+            opacity: 0.5; }
+          .cuerpo3 #part4 #table2 tr th#parrafo6 {
+            font-weight: 'lighter';
+            font-size: 12pt;
+            border: 2px solid #e9e6e6;
+            background: white;
+            opacity: 0.3; }
+          .cuerpo3 #part4 #table2 tr th#parrafo7 {
+            font-weight: 'lighter';
+            font-size: 12pt;
+            border: 2px solid #e9e6e6;
+            background: white;
+            opacity: 0.1; }
 
-/*.footer {
-    background-color: green;
+.footer {
+  background-color: #445B69;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px; }
+  .footer #pie-Label-one {
+    color: white;
+    font-weight: bold;
+    font-size: 36pt; }
+  .footer #pie-Label-two {
+    color: #5DBCD2;
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 50px; }
+  .footer #tabla {
+    display: flex;
+    justify-content: center; }
+    .footer #tabla table tr td {
+      width: 110px; }
+  .footer #pie2 {
+    color: #688494;
+    display: flex;
+    justify-content: center;
+    background-color: #3C525F;
+    font-size: 14pt;
+    margin-top: 50px;
     padding: 25px 0px 25px 0px;
-}*/
+    flex-grow: 1; }
+    .footer #pie2 .creditos:hover {
+      color: white;
+      cursor: pointer; }
+
 /*-------------------------------Adaptable------------------------------*/
 @media all and (max-width: 1085px) {
   .cuerpo {
@@ -375,7 +446,27 @@ hr {
       display: flex;
       flex-direction: column;
       width: 400px;
-      height: 560px; } }
+      height: 560px; }
+
+  .cuerpo3 #part3 {
+    height: 170px; }
+    .cuerpo3 #part3 #parrafoBajo {
+      font-size: 30pt; }
+    .cuerpo3 #part3 #parrafoBajo2 {
+      font-size: 13.3pt; }
+    .cuerpo3 #part3 #btn4 {
+      font-size: 12pt;
+      height: 40px;
+      width: 160px; }
+  .cuerpo3 #part4 #table2 tr th img {
+    height: 70px;
+    width: auto; }
+  .cuerpo3 #part4 #table2 tr th#parrafo5 {
+    font-size: 10pt; }
+  .cuerpo3 #part4 #table2 tr th#parrafo6 {
+    font-size: 10pt; }
+  .cuerpo3 #part4 #table2 tr th#parrafo7 {
+    font-size: 10pt; } }
 @media all and (max-width: 950px) {
   .cuerpo #part1 {
     margin: 110px 0px 0px 0px;
@@ -423,11 +514,11 @@ hr {
             font-size: 10pt;
             top: 15px;
             width: 60px; }
-        .cuerpo #part2 .datos .mesess .interes_Mensual #interes_Mensual {
+        .cuerpo #part2 .datos .mesess .interes-mensual #interes_Mensual {
           font-size: 10pt;
           top: 10px;
           width: 149px; }
-        .cuerpo #part2 .datos .mesess .interes_Mensual #text3 {
+        .cuerpo #part2 .datos .mesess .interes-mensual #text3 {
           height: 25px;
           width: 90px;
           font-size: 10pt;
@@ -435,15 +526,19 @@ hr {
           left: 0px; }
       .cuerpo #part2 .datos hr {
         width: 240px; }
-      .cuerpo #part2 .datos .pagos .cuota #p1, .cuerpo #part2 .datos .pagos .interes_A_Pagar #p1, .cuerpo #part2 .datos .pagos .total_A_Pagar #p1 {
+      .cuerpo #part2 .datos .pagos .cuota #p1,
+      .cuerpo #part2 .datos .pagos .interes-a-pagar #p1,
+      .cuerpo #part2 .datos .pagos .total-a-pagar #p1 {
         font-size: 7pt; }
-      .cuerpo #part2 .datos .pagos .cuota #p2, .cuerpo #part2 .datos .pagos .interes_A_Pagar #p2, .cuerpo #part2 .datos .pagos .total_A_Pagar #p2 {
+      .cuerpo #part2 .datos .pagos .cuota #p2,
+      .cuerpo #part2 .datos .pagos .interes-a-pagar #p2,
+      .cuerpo #part2 .datos .pagos .total-a-pagar #p2 {
         font-size: 14pt; }
       .cuerpo #part2 .datos .pagos .cuota {
         flex: 1; }
-      .cuerpo #part2 .datos .pagos .interes_A_Pagar {
+      .cuerpo #part2 .datos .pagos .interes-a-pagar {
         flex: 2; }
-      .cuerpo #part2 .datos .pagos .total_A_Pagar {
+      .cuerpo #part2 .datos .pagos .total-a-pagar {
         flex: 1.5; }
       .cuerpo #part2 .datos .p3 #parrafo8 {
         font-size: 10pt;
@@ -460,7 +555,38 @@ hr {
     font-size: 17.5pt; }
   .cuerpo2 img {
     height: auto;
-    width: 500px; } }
+    width: 500px; }
+
+  .cuerpo3 #part3 {
+    height: 255px; }
+    .cuerpo3 #part3 #parrafoBajo {
+      font-size: 24pt; }
+    .cuerpo3 #part3 #parrafoBajo2 {
+      font-size: 11pt; }
+    .cuerpo3 #part3 #btn4 {
+      font-size: 6pt;
+      height: 30px;
+      width: 140px; }
+  .cuerpo3 #part4 {
+    width: 303px; }
+    .cuerpo3 #part4 #table2 tr th img {
+      height: 50px;
+      width: auto; }
+    .cuerpo3 #part4 #table2 tr th#parrafo5 {
+      font-size: 8pt; }
+    .cuerpo3 #part4 #table2 tr th#parrafo6 {
+      font-size: 8pt; }
+    .cuerpo3 #part4 #table2 tr th#parrafo7 {
+      font-size: 8pt; }
+
+  .footer #pie-Label-one {
+    font-size: 30pt; }
+  .footer #pie-Label-two {
+    font-size: 16pt; }
+  .footer #tabla table tr td {
+    width: 100px; }
+  .footer #pie2 {
+    font-size: 12pt; } }
 @media all and (max-width: 650px) {
   .header {
     display: flex;
@@ -476,7 +602,8 @@ hr {
       flex-wrap: wrap;
       flex-grow: 1;
       margin-right: 0px; }
-      .header .botones #btn1, .header .botones #btn2 {
+      .header .botones #btn1,
+      .header .botones #btn2 {
         margin: 0px;
         flex-grow: 1; }
 
@@ -490,7 +617,7 @@ hr {
       font-size: 15pt; }
     .cuerpo #part1 #btn3 {
       font-size: 10pt;
-      height: auto;
+      height: 60px;
       width: 140px; }
 
   .cuerpo2 #parrafo3 {
@@ -499,7 +626,19 @@ hr {
     font-size: 15.5pt; }
   .cuerpo2 img {
     height: auto;
-    width: 450px; } }
+    width: 450px; }
+
+  .footer #pie-Label-one {
+    font-size: 24pt; }
+  .footer #pie-Label-two {
+    font-size: 14pt; }
+  .footer #tabla table tr td {
+    width: 80px; }
+    .footer #tabla table tr td img {
+      height: 50px;
+      width: auto; }
+  .footer #pie2 {
+    font-size: 10pt; } }
 @media all and (max-width: 535px) {
   .cuerpo2 #parrafo3 {
     font-size: 16pt; }
@@ -507,6 +646,53 @@ hr {
     font-size: 10.5pt; }
   .cuerpo2 img {
     height: auto;
-    width: 300px; } }
+    width: 300px; }
+
+  .cuerpo3 {
+    flex-wrap: wrap; }
+    .cuerpo3 #part3 {
+      margin: 45px 0px 0px 0px;
+      height: 120px; }
+      .cuerpo3 #part3 #parrafoBajo {
+        font-size: 18pt; }
+      .cuerpo3 #part3 #parrafoBajo2 {
+        font-size: 10pt; }
+      .cuerpo3 #part3 #btn4 {
+        font-size: 8pt;
+        height: 60px;
+        width: 110px; }
+    .cuerpo3 #part4 #table2 {
+      margin: 25px 0px 0px 0px; }
+      .cuerpo3 #part4 #table2 tr {
+        width: auto;
+        height: 10px; }
+        .cuerpo3 #part4 #table2 tr th {
+          width: auto;
+          height: 10px; }
+          .cuerpo3 #part4 #table2 tr th img {
+            height: 50px;
+            width: auto; }
+          .cuerpo3 #part4 #table2 tr th#parrafo5 {
+            font-size: 10pt; }
+          .cuerpo3 #part4 #table2 tr th#parrafo6 {
+            font-size: 10pt; }
+          .cuerpo3 #part4 #table2 tr th#parrafo7 {
+            font-size: 10pt; }
+
+  .footer {
+    padding-top: 20px; }
+    .footer #pie-Label-one {
+      font-size: 15pt; }
+    .footer #pie-Label-two {
+      font-size: 8.7pt;
+      padding-bottom: 20px; }
+    .footer #tabla table tr td {
+      width: 50px; }
+      .footer #tabla table tr td img {
+        height: 30px;
+        width: auto; }
+    .footer #pie2 {
+      font-size: 5pt;
+      margin-top: 20px; } }
 
 /*# sourceMappingURL=Home.css.map */
